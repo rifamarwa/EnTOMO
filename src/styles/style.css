@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    display: block;
+    background-color: #181C1C !important;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+}
+
+jumbotron-container{
+    margin-bottom: 130px;
+}
+
+main {
+    min-height: 100vh;
+    padding: 30px;
+    color: white;
+}
+
+.home-section{
+    position: relative;
+}
+
+.right-container h4{
+    margin-left: 80px;
+}
+
+.detail-section {
+    padding: 0px 40px;
+}
+
+.btn {
+    background-color: #FF88AE !important;
+    padding: 0px 15px !important;
+}
+
+footer{
+    color : #FFFFFF;
+}
+
+footer-detail {
+    width: 100%;
+    padding: 10px 0px 50px 0px;
+}
+
+
