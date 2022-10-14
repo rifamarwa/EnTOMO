@@ -55,8 +55,8 @@ class FooterDetail extends HTMLElement {
             }
 
             </style>
-            <img class="border-line" width="100%" src="../assets/line-footer.svg">
-            <img style="width:fit-content; margin-left: 30px" src="../assets/entomo-logo.svg"><br>
+            <img class="border-line" width="100%" src="./assets/line-footer.svg">
+            <img style="width:fit-content; margin-left: 30px" src="./assets/entomo-logo.svg"><br>
             <div class="detail-footer row">
                 <div class="left-part-footer col col-md-9">
                     <h7>EnTOMO merupakan situs yang menyediakan informasi film dan series TV luar negeri. Seluruh data bersumber dari API The Movie Database. EnTOMO dibuat untuk memenuhi submission Dicoding: Belajar Fundamental Front-End Web Development.</h7>
@@ -64,9 +64,9 @@ class FooterDetail extends HTMLElement {
                 <div class="right-part-footer col col-md-3">
                     <h5 style="margin-bottom: 20px">Contact</h5>
                     <div style="display: flex">
-                        <a href="mailto:rifamarwa4869@gmail.com?subject=&body="><img src="../assets/gmail.png"><br></a>
-                        <a href="https://github.com/rifamarwa"><img src="../assets/github.png"></a><br>
-                        <a href="https://linkedin.com/in/rifa-marwa"><img src="../assets/linkedin.png"></a>
+                        <a href="mailto:rifamarwa4869@gmail.com?subject=&body="><img src="./assets/gmail.png"><br></a>
+                        <a href="https://github.com/rifamarwa"><img src="./assets/github.png"></a><br>
+                        <a href="https://linkedin.com/in/rifa-marwa"><img src="./assets/linkedin.png"></a>
                     </div>
                 </div>
                 <p>Made with &#128150; by Rifa Marwa Rahadatul Aisy Putri &#9400; 2022</p>

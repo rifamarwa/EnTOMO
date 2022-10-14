@@ -91,7 +91,6 @@ class TrendingItem extends HTMLElement {
         `;
 
         let ratings = this.querySelector('.trending-rating-container');
-        console.log(ratingAverage)
             if (ratingAverage >= 7.0) {
                 ratings.style.borderColor = '#47D221'
             } else if (ratingAverage < 7.0 && ratingAverage > 4.0) {
