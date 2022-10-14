@@ -14,12 +14,14 @@ class CastItem extends HTMLElement{
                 color: #FFFFFF;
                 width: 100px !important;
                 border-radius: 5px !important;
+                margin-bottom: 20px;
             }
 
             .card-cast .card-cast-body {
                 background-color : #202424 !important;
+                border-radius: 5px !important;
                 width: 100px;
-                height: 100px;
+                height: 95px;
             }
 
             .card-cast .card-body h6 {
@@ -39,6 +41,10 @@ class CastItem extends HTMLElement{
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
+            }
+
+            @media screen and (max-width: 991px){
+
             }
         </style>
         <div class="card card-cast">

@@ -1,4 +1,5 @@
 import './search-form.js'
+import "../assets/menu-icon.svg"
 
 class AppBar extends HTMLElement{
     connectedCallback(){
@@ -21,12 +22,23 @@ class AppBar extends HTMLElement{
             position: relative;
             overflow: hidden;
             padding: 25px;
+            display: flex;
+        }
+
+        nav {
+           display: flex;
+           width: 70%;
+        }
+
+        nav .logo {
+            width: 40%;
         }
 
         ul {
             position: relative;
             margin: 0;
             padding: 0;
+            width: 70%;
             display: flex;
             color: white !important;
         }
@@ -61,14 +73,53 @@ class AppBar extends HTMLElement{
         search-form {
             padding: 25px;
         }
+
+        .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 870px){
+            nav {
+                display: block;
+            }
+
+            nav ul {
+                margin-left: 10px;
+            }
+
+            search-form {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 750px){
+            .app-bar-container {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+            .app-bar-container {
+                display: block;
+            }
+            
+            nav ul {
+                display: flex;
+                width: 120%;
+            }
+
+            search-form {
+                width: 100%;
+            }
+        }
         
         </style>
-        <div class="app-bar-container row">
-            <nav class="row col-8">
-                <div class="nav logo col-4">
+        <div class="app-bar-container">
+            <nav class="navigation">
+                <div class="nav logo">
                     <a><img class="nav-link" id="home" src="./assets/entomo-logo.svg"></a>
                 </div>
-                <ul class="nav col-8">
+                <ul class="nav">
                     <li><a class="nav-link" id="movies">Movies</a></li>
                     <li><a class="nav-link" id="tvShows">TV Shows</a></li>
                 </ul>

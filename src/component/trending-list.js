@@ -11,7 +11,7 @@ class TrendingList extends HTMLElement {
         this._trendingMovies.forEach(movie => {
             const movieItemElement = document.createElement('trending-item');
             movieItemElement.trendingMovie = movie;
-
+            movieItemElement.classList = 'col'
             this.appendChild(movieItemElement);
         })
     }

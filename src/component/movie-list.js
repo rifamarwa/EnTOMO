@@ -11,7 +11,7 @@ class MovieList extends HTMLElement{
         this.innerHTML = "";
         this._movies.forEach(movie => {
             const movieItemElement = document.createElement('movie-item');
-            movieItemElement.className = "col-2";
+            movieItemElement.className = "col-4 col-md-2";
             movieItemElement.movie = movie;
 
             this.appendChild(movieItemElement);

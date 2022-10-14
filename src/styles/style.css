@@ -53,3 +53,25 @@ footer-detail {
 }
 
 
+
+@media screen and (max-width: 991px){
+    main{
+        padding: 0;
+    }
+
+    #data-list, .movie-tv-section{
+        padding: 30px;
+    }
+
+    .right-container {
+        width: 80% !important;
+        margin: 40px;
+    }
+
+    .right-container h4{
+        margin:auto;
+        padding-bottom: 20px;
+    }
+}
+
+

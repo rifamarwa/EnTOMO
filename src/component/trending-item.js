@@ -52,6 +52,10 @@ class TrendingItem extends HTMLElement {
 
         .trending-item-detail h5{
             font-size: 16px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
 
         .trending-item-detail p {
@@ -62,6 +66,12 @@ class TrendingItem extends HTMLElement {
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             text-align: justify;
+        }
+
+        @media screen and (max-width: 991px){
+            .trending-item {
+                margin: 0 0 30px 0;
+            }
         }
     
         </style>

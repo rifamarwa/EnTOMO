@@ -11,6 +11,7 @@ const main = () => {
     const trendingListElement = document.querySelector('.trending-list');
 
     const tabTitle = document.querySelector('.tab-title');
+    const tabTitleContainer = document.getElementById('tabTitle');
 
     const getList = (path) => {
         DataSource.getList(path)
@@ -88,11 +89,13 @@ const main = () => {
                 break;
             case 'movies':
                 switchPage('tab');
+                tabTitleContainer.style.display = 'flex';
                 tabTitle.innerText = 'Movies';
                 getList(path.movies);
                 break;
             case 'tvShows':
                 switchPage('tab');
+                tabTitleContainer.style.display = 'flex';
                 tabTitle.innerText = 'TV Shows';
                 getList(path.tvShows);
                 break;
@@ -102,17 +105,21 @@ const main = () => {
     const buttonSeeAll = document.querySelectorAll(".btn-see-all");
     buttonSeeAll.forEach(button => {
         button.addEventListener('click', function(){
+            tabTitleContainer.style.display = 'flex';
             switch (button.id){
                 case 'btn-now-playing':
                     switchPage('tab');
+                    tabTitle.innerText = 'Now Playing';
                     getList(path.nowPlaying);
                     break;
                 case 'btn-popular':
                     switchPage('tab');
+                    tabTitle.innerText = 'Popular';
                     getList(path.popular);
                     break;
                 case 'btn-upcoming':
                     switchPage('tab');
+                    tabTitle.innerText = 'Upcoming';
                     getList(path.upcoming);
                     break;
             }
@@ -120,8 +127,6 @@ const main = () => {
     })
 
     navigation.clickEvent = tabSelected;
-
-    // switchPage('home');
     getTopList();
     getTrendingList();
 }

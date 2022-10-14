@@ -38,6 +38,20 @@ class SearchForm extends HTMLElement{
             background-color: #181C1C;
             color: #CFCFCF;
         }
+
+        @media screen and (max-width: 1100px){
+            .search-container {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 870px){
+            .search-container {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+
         </style>
         <form id="searchForm" class="search-form">
             <div class="search-container">
