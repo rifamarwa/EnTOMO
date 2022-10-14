@@ -11,7 +11,7 @@ class ReviewItem extends HTMLElement {
         const avatarSource = () => {
             let source = this._review.author_details.avatar_path
             if(source == null){
-                return '../assets/user.png'
+                return './assets/user.png'
             } else if (source.includes('https://www.gravatar.com/avatar/')){
                 let newSource = source.slice(1)
                 return newSource
